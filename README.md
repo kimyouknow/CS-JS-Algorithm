@@ -4,16 +4,16 @@
 
 ## cs
 
-▶ [링크](https://github.com/kimyouknow/CS-JS-theory/tree/main/cs)
+▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithm/tree/main/cs)
 
 ## js이론
 
-▶ [링크](https://github.com/kimyouknow/CS-JS-theory/tree/main/js)
+▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithm/tree/main/js)
 
 ## 알고리즘
 
-▶ [링크](https://github.com/kimyouknow/CS-JS-theory/tree/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithm/tree/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 
 ## 기타
 
-▶ [링크](https://github.com/kimyouknow/CS-JS-theory/tree/main/etc)
+▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithmy/tree/main/etc)
