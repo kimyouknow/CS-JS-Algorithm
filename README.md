@@ -14,6 +14,10 @@
 
 ▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithm/tree/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 
+## 웹
+
+▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithm/tree/main/%EC%9B%B9)
+
 ## 기타
 
 ▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithmy/tree/main/etc)
