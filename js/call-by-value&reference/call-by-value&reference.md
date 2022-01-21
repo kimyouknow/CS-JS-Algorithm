@@ -2,10 +2,7 @@ ES2015에 추가된 기능중, default parameter 와 rest parameter는 무엇인
 
 call by value, call by reference의 차이를 이해한다.
 
-참고:
-
-- https://velog.io/@leo-xee/JS-Call-by-value-reference
-- 모던 자바스크립트 Deep Drive 이웅모
+> 함수형 프로그래밍에서 주의할 것. 함수형 프로그래밍에서 다루는 순수함수의 경우 외부상태를 변경시키는 부수효과가 없어야 한다. js에서 객체 타입은 call by refernce이기 때문에 그 값이 아닌 값을 저장하고 있는 주소를 담고 있다. 따라서, 원본 객체를 얕게 복사하여 복사된 객체를 리턴해야 한다.
 
 > ## 기본 값과 객체의 비교
 
@@ -113,3 +110,8 @@ const person = {
 // pserson 변수에 저장되어 있는 참조 값으로 실제 객체에 접근.
 console.log(person); // {name: "윤"}
 ```
+
+👀 참고:
+
+- https://velog.io/@leo-xee/JS-Call-by-value-reference
+- 모던 자바스크립트 Deep Drive 이웅모
