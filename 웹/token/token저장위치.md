@@ -64,6 +64,7 @@ Cookie와 Authorization은 모두 HTTP Request header 내부에 있는 필드이
 👀 참고자료
 
 - https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Authorization
+- https://dev.to/gkoniaris/how-to-securely-store-jwt-tokens-51cf
 - https://tecoble.techcourse.co.kr/2020-08-31/where_to_store_token
 - https://velog.io/@neity16/NodeJS-Token-%EC%A0%80%EC%9E%A5-%EC%9C%84%EC%B9%98%EC%9D%98-%EA%B3%A0%EC%B0%B0
 - https://velog.io/@ehdrms2034/Access-Token-%EC%A0%80%EC%9E%A5-%EC%9C%84%EC%B9%98%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EC%B0%B0
