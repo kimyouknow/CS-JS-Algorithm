@@ -20,8 +20,9 @@
 | 탐색      | 메모리 공간에 연속적으로 저장되어 있어, 인덱스를 활용해 빠르게 접근 가능    | 노드들이 순차적으롱 연결되어 있어, 처음노드부터 찾아야 한다. |
 | 구현      | 비교적 간단                                                                 | 비교적 복잡                                                  |
 
-> 탐색과 정렬을 자주 한다면 배열 리스트 <br>
-> 추가와 삭제(수정)가 많다면 연결 리스트
+> ### 탐색과 정렬을 자주 한다면 배열 리스트
+
+> ### 추가와 삭제(수정)가 많다면 연결 리스트
 
 # 종류
 
@@ -57,7 +58,7 @@
 
 - ?
 
-# 구현
+# SSL 구현
 
 ## 기본구조
 
@@ -82,12 +83,12 @@ class SingleLinkedList {
 
 ## 추가
 
-- head가 null이라면, 리스트가 비어 있다는 뜻이므로, head로 설정
-- head가 null이 아니라면, 마지막 노드를 찾아, 마지막 노드의 next로 새로 받은 노드를 설정.
-- 마지막 노드 찾기: current의 next가 null일 때까지 current를 current.next로 변경
+- `head가 null`이라면, `리스트가 비어 있다는 뜻`이므로, head로 설정
+- head가 null이 아니라면, 마지막 노드를 찾아, `마지막 노드의 next로 새로 받은 노드를 설정`.
+- `마지막 노드 찾기`: current의 next가 null일 때까지 current를 current.next로 변경
 
 ```js
-  add(value) {
+  push(value) {
     const newNode = new Node(value);
     let current = this.head;
     if (!current) {
@@ -104,11 +105,91 @@ class SingleLinkedList {
 
 ## 삽입
 
-- k번쨰 삽입하기 위해서는 인자로 받은 k가 0이 될 때까지 -1하면서 while문 반복
+- `k번쨰 삽입`하기 위해서는 인자로 받은 `k가 count와 같아질때`까지 while문 반복
+- while문을 반복하면서 `prev에 current를 넣고`,` current값을 current.next`으로 변경
+- `while문이 끝나면` `newNode.next에 current(current.next)`를 넣고` prev.next에 newNode를 삽입`
+- `k가 size보다 크면` 연결리스트의 `마지막에 삽입`
+- `k가 0`이면 `맨앞에 삽입`
+
+```js
+  insert(value, idx) {
+    const newNode = new Node(value);
+    let current = this.head;
+    if (!current) {
+      return "SSL is empty";
+    }
+    if (idx === 0) {
+      newNode.next = current;
+      this.head = newNode;
+      this.size++;
+      return;
+    }
+    let prev, count;
+    while (count < idx || current) {
+      prev = current;
+      current = current.next;
+      count++;
+    }
+    newNode.next = current;
+    prev.next = newNode;
+    this.size++;
+  }
+```
 
 ## 삭제
 
+- `value`를 입력받아, 해당 value에 해당하는 요소를 삭제
+- 해당 value의 앞의 값과 다음값을 연결
+- index기준으로 찾는 것도 같은 방법으로 구현 가능
+
+```js
+ delete(value) {
+    let current = this.head;
+    let prev = null;
+    if (!current) {
+      return "SSL is empty";
+    } else {
+      while (current.next) {
+        if (current.value === value) {
+          // 이전 것의 next를 다음 것의 next로 변경
+          prev.next = current.next;
+          this.size--;
+          return `${value} is deleted`;
+        }
+        prev = current;
+        current = current.next;
+      }
+      return `Can't find ${value}`;
+    }
+  }
+```
+
 ## 수정(찾기)
+
+- 삭제를 value기준으로 구현해서 수정은 idx로 구현
+- 삽입과 같은 로직
+
+```js
+  edit(value, idx) {
+    let current = this.head;
+    if (!current) {
+      return "SSL is empty";
+    }
+    if (idx === 0) {
+      newNode.next = current;
+      this.head = newNode;
+      this.size++;
+      return;
+    }
+    let count;
+    while (count < idx || current) {
+      current = current.next;
+      count++;
+    }
+    current.value = value;
+    this.size++;
+  }
+```
 
 ## 뒤집기
 
@@ -118,22 +199,19 @@ class SingleLinkedList {
 - current가 null일 때까지 current에 current의 next값을 넣어주기
 
 ```js
-show() {
+  show() {
     const showArr = [];
     let current = this.head;
     while (current) {
-      showArr.push(current);
+      showArr.push(current.value);
       current = current.next;
     }
-    console.log(showArr);
+    console.log(this.size, showArr);
   }
 ```
 
 ## 이중 연결 리스트
 
-# 시간복잡도
-
 ### 🔍 참고자료
 
 - 모던 자바스크립트 deep dive, 이웅모
--
