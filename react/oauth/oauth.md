@@ -22,3 +22,4 @@
 
 - https://deeplify.dev/back-end/spring/oauth2-social-login#%EC%8B%9C%ED%80%80%EC%8A%A4-%EC%84%A4%EB%AA%85
 - https://rrecoder.tistory.com/148
+- http://devhyun.com/blog/post/15
