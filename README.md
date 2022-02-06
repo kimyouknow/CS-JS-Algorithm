@@ -20,6 +20,14 @@
 
 ▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithm/tree/main/%EC%9B%B9)
 
+## react
+
+▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithm/tree/main/react)
+
+## 코딩관련책
+
+▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithm/tree/main/book)
+
 ## 기타
 
 ▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithmy/tree/main/etc)
