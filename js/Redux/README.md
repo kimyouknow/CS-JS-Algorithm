@@ -2,13 +2,20 @@
 
 redux 공식문서 번역 및 추가 공부내용 정리
 
+📍 목차
+
+1. Redux란
+2. Redux Terms and Concepts
+3. Terminology - 핵심 키워드
+4. 3가지 규칙
+
 # Redux란
 
 `예측가능한 상태의 저장소` - A predicatable state container for JS apps.
 
 - Apllication의 복잡성을 획기적으로 낮추어 우리의 코드가 어떤 결과를 가져올지 예측가능하게 만들어주는 도구라고 할 수 있다.
 
-## Redux Terms and Concepts
+# Redux Terms and Concepts
 
 1. State Mangement (상태관리)
 
@@ -157,6 +164,22 @@ console.log(currentValue);
 // 2
 ```
 
+# 3가지 규칙
+
+1. 하나의 application 안에는 하나의 store
+
+- 필수는 아니지만 여러 개의 store를 만들면 개발 도구를 사용할 수 없기 때문에 권장하지 않는다.
+
+2. state는 읽기 전용
+
+- 불변성 유지
+
+3. 변화를 일으키는 함수, reducer는 순수함수여야 한다.
+
+- 동일한 input에 대하여 동일한 output이 보장되어야 한다.
+- 불변성 유지와 관련
+
 🔍 참고자료
 
-- [Redux 시작하기](https://ko.redux.js.org/introduction/getting-started/)
+- [Redux 시작하기 - redux.js.org](https://ko.redux.js.org/introduction/getting-started/)
+- [리덕스 - react.vlpt.us](https://react.vlpt.us/redux/);
