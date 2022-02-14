@@ -6,7 +6,9 @@
 
 - [x] redux 란
 - [ ] react-redux
-- [x] react-redux thunk
+- [ ] redux middlewware
+- [x] react redux-thunk
+- [ ] react redux-promise
 
 # Redux란?
 
@@ -18,7 +20,11 @@
 
 react에서는 컴포넌트끼리 직접 소통할 수 있지만, 코드가 복잡해지고 디버깅이 어려워 권장하지 않는다. 보통 react에서 부모 컴포넌트가 중간자 역할을 한다. 하지만 부모-자식 컴포넌트의 복잡성이 증가하고 깊이가 깊어질수록 state를 관리하기 복잡해질 수 있다.
 
-# React redux thunk
+# redux-middleware
+
+react에서 redux의 middleware를 사용하기 위해서는 store 설정을 해주어야 한다.
+
+# redux-thunk
 
 redux-thunk는 redux에서 비동기 작업을 처리 할 때 많이 사용하는 미들웨어 중 하나다.
 
@@ -139,6 +145,10 @@ export default function weather(state = initState, action) {
 }
 ```
 
+# redux-promise
+
+redux-thunk가 action을 function 형태로 전달받을 수 있게한다면 react-promise는 action을 promise형태로 받을 수 있게 한다.
+
 🔍 참고자료
 
 - [react-redux.js.org 문서](https://react-redux.js.org)
@@ -149,3 +159,4 @@ export default function weather(state = initState, action) {
 - [생활코딩 - react-redux 2022 개정판](https://youtu.be/yjuwpf7VH74)
 - [Velopert - 리덕스를 왜 쓸까?](https://velopert.com/3528)
 - [Redux 어떻게 써야 잘 썼다고 소문이 날까?](https://velog.io/@velopert/using-redux-in-2021)
+- [[Redux] 미들웨어란? (Redux Thunk, redux-promise-middleware)](https://tried.tistory.com/86)

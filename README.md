@@ -18,7 +18,7 @@
 
 ## 웹
 
-▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithm/tree/main/%EC%9B%B9)
+▶ [링크](https://github.com/kimyouknow/TIL/tree/main/네트워크%20및%20웹)
 
 ## react
 
