@@ -1,6 +1,6 @@
 # 이론정리(TIL)
 
-✅ `cs`, `js이론`, `알고리즘`에 대해 공부한 내용을 정리했습니다.
+공부 기록 및 학습 내용 정리
 
 > 폴더구조 및 주된 내용은 https://gyoogle.dev/blog/를 참고했습니다.
 
@@ -16,9 +16,13 @@
 
 ▶ [링크](https://github.com/kimyouknow/TIL/tree/main/네트워크%20및%20웹)
 
-## html & css
+## html
 
-▶ [링크](https://github.com/kimyouknow/TIL/tree/main/html&css)
+▶ [링크](https://github.com/kimyouknow/TIL/tree/main/html)
+
+## css
+
+▶ [링크](https://github.com/kimyouknow/TIL/tree/main/css)
 
 ## js이론
 
