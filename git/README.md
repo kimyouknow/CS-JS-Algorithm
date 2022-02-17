@@ -27,11 +27,32 @@ git init
 // 저장소 받아오기
 git clone /로컬/저장소/경로 // 로컬 저장소 clone
 git clone 사용자명@호스트:/원격/저장소/경로 // 원격 서버의 저장소 clone
+
+// 특정 브랜치만 clone
+git clone -b {브랜치명} --single-branch {저장소 url}
 ```
 
 ```bash
 git commit -m "제목"
 git commit // vi 편집기로 넘어감. 아래 커밋 약속 정리에 예시 남겨둠.
+# --amend: 가장 최근 커밋 메세지 수정
+# -p: 변경사항을 확인하면서 스테이징 작업 가능, 수정된 파일의 수정 부분을 단위별로 나눠서 추가할지 말지 보여준다. hunk(변경사항 단위)를 추가할지말지 결정
+#    y - (중요)stage this hunk
+#    n - (중요)do not stage this hunk
+#    q - (중요)quit; do not stage this hunk or any of the remaining ones
+#    a - stage this hunk and all later hunks in the file
+#    d - do not stage this hunk or any of the later hunks in the file
+#    g - select a hunk to go to
+#    / - search for a hunk matching the given regex
+#    j - leave this hunk undecided, see next undecided hunk
+#    J - leave this hunk undecided, see next hunk
+#    k - leave this hunk undecided, see previous undecided hunk
+#    K - leave this hunk undecided, see previous hunk
+#    s - split the current hunk into smaller hunks
+#    e - (중요)manually edit the current hunk
+#    ? - (중요)print help
+# -v: -p와 마찬가지로 커밋하는 변경사항을 다시 한번 확인하고 커밋가능. 다만, 화면 아래 diff가 한 번더 나옴.
+
 ```
 
 ```bash
@@ -39,9 +60,12 @@ git push <저장소명> <브랜치명>
 ```
 
 ```bash
-git check
+git reset HEAD // git add 취소
 ```
 
 ```bash
-git
+git log
+# --all
+# -- oneline
+# -- grapth
 ```
