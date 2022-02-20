@@ -1,8 +1,10 @@
-# 이론정리(TIL)
+# 이론정리 및 회고
 
-공부 기록 및 학습 내용 정리
+이론정리 및 회고를 기록하는 레포지토리입니다.
 
-> 폴더구조 및 주된 내용은 https://gyoogle.dev/blog/를 참고했습니다.
+## 회고
+
+▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithm/tree/main/회고)
 
 ## cs
 

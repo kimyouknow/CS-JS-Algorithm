@@ -99,10 +99,6 @@ git merge upstream/main
 // 아니면 rebase 사용
 ```
 
-### PR 보내기
-
-- Github 서비스로 보내기
-
 🔍 참고자료
 
 - [누구나 쉽게 이해할 수 있는 Git 입문](https://backlog.com/git-tutorial/kr/intro/intro1_2.html)

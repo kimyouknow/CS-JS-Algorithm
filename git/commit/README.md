@@ -56,8 +56,6 @@ Chore : 기타 변경사항(빌드 스크립트 수정 등등)
 ```
 
 ![terminal example](https://user-images.githubusercontent.com/71386219/153839972-6eb2598e-ebb8-40ad-9ff5-4951310464d3.png)
-![gitlog](https://user-images.githubusercontent.com/71386219/153839981-16a117f7-c6cb-4d4b-b823-4b77d758ba69.png)
-![gitlog--oneline](https://user-images.githubusercontent.com/71386219/153839992-01408c4e-bc2f-4b38-bc70-b2c5a3b934c4.png)
 
 🔍 참고자료
 
