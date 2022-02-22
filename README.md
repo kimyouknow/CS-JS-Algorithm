@@ -4,7 +4,7 @@
 
 ## 회고
 
-▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithm/tree/main/회고)
+▶ [링크](https://github.com/kimyouknow/CS-JS-Algorithm/tree/main/_회고)
 
 ## cs
 
