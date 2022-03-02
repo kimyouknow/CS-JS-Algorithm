@@ -32,6 +32,35 @@ IBM사이트에서 설명하는 api 문서에 따르면
 
 SOAP 또는 XML-RPC 등의 일부 API는 개발자에 대한 엄격한 프레임워크를 부과한다. 그러나 REST API는 거의 모든 프로그래밍 언어를 사용하여 개발이 가능하다.
 
+> REST는 REprensetataional State Tansfter의 약자로, 해석하자면 (대표적인) 표현된 상태라고 할 수 있다. 여기서 상태는 리소스의 상태를 말한다. 즉, REST는 통신을 위해 자원의 표현된 상태를 주고받는 것에 대한 아키텍처 가이드 라인이라고 할 수 있다.
+
+## 리소스
+
+`우리는 통신을 하면서 리소스를 직접 주고 받지 않는다.` api를 사용해 주고 받는 리소는 문서, 이미지 또는 json 데이터일 수 있다. 하지만 우리는 직접 리소스를 주고 받지 않는다.
+
+예를 들어, 클라이언트에서 서버로 id=2인 유저 정보를 요청한다고 할 때, 서버가 주는 정보는 리소스의 원본이 아닌 데이터 베이스에 저장된 id가 2인 유저의 리소스를 표현한 Json이다.
+
+### 리소스를 표현한 상태라는 것의 의미
+
+그렇다면 리소스의 적당한 상태가 무엇을 의미할까? 적당한 상태에 대한 힌트는 HTTP 요청 헤더나 응답 헤더에 담겨있다.
+
+```http
+<!-- https://evan-moon.github.io/2020/04/07/about-restful-api/ -->
+GET https://iamserver.com/api/users/2
+Host: iamserver.com
+Accept: application/json
+```
+
+위의 예시를 보면 클라이언트는 요청 해더에 Aceept라는 키에 application/json을 담아 보냈다. 클라이언트가 서버에게 id가 2인 유저의 정보를 json으로 표현해 달라고 요청한 것이다.
+
+## RESTful API
+
+REST 아키텍처를 통해 표현된 리소스와 더불어 어떠한 행위를 명시할 수 있는 HTTP 메서드와 url까지 활용하여 다음과 같은 요소를 활용해 표현한다.
+
+1. REST: 리소스가 어떻게 표현되는지?
+2. URI: 어떤 리소스 인지
+3. HTTP 메소드: 어떤 행위인지
+
 ## 디자인 원칙
 
 1. 균일한 인터페이스.
@@ -74,3 +103,4 @@ SOAP 또는 XML-RPC 등의 일부 API는 개발자에 대한 엄격한 프레임
 - [API란?](https://www.redhat.com/ko/topics/api/what-are-application-programming-interfaces)
 - [REST API(RESTful API, 레스트풀 API)란? 구현 및 사용법 - redhat](https://www.redhat.com/ko/topics/api/what-is-a-rest-api)
 - [REST API - ibm](https://www.ibm.com/kr-ko/cloud/learn/rest-apis)
+- [프론트엔드와 백엔드가 소통하는 엔드포인트, RESTful API](https://evan-moon.github.io/2020/04/07/about-restful-api/)
