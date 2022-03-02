@@ -48,7 +48,7 @@ Javscript 런타임을 단순화해서 보았을 때, 먼저 메모리 할당이
 
 # callback
 
-## Callback 패턴의 단점
+## callback 패턴의 단점
 
 - 중첩이 되어 복잡도가 높아짐
 - 비동기처리모델은 실행완료를 기다리지 않고 즉시 다음 테스크를 실행하는데, 비동기함수 내에서 처리 결과를 반환하면 기대한 채로 동작안함. (`후속처리가 어려워 비동기 함수의 처리 결과에 대한 처리는 비동함수의 콜백 함수 내에서 처리해야함`)
@@ -65,6 +65,8 @@ Promise is a Javascript object for asynchronous operation.
 // When new Promise is created, the executor runs automaitcally
 const promise = new Promise((relove, reject) => {
   // doing some heavy work(network, read files)
+  resolve();
+  reject();
 });
 // 2. Consumer: then, catch, finally
 promise
@@ -75,7 +77,7 @@ promise
     console.log(error);
   })
   .finally(() => {
-    console.log("finally");
+    console.log('finally');
   });
 ```
 
@@ -102,6 +104,31 @@ const promise = new Promise((resolve, reject) => {
 });
 ```
 
+❗️ 주의
+
+`한 번 생성된 비동기 인스턴스는 한 번만 실행된다.` 한 번 생성도니 인스턴스에서 여러 번 then문을 실행해도 처음에 결정된 promise 값을 보여준다. 프로미스는 하나인데 등록된 핸들러만 여러 개일 뿐이다. `각각의 핸들러는 순차적으로 실행되지 않고 독립적으로 실행된다.`
+
+```js
+let promise = new Promise(function (resolve, reject) {
+  setTimeout(() => resolve(1), 1000);
+});
+
+promise.then(function (result) {
+  alert(result); // 1
+  return result * 2;
+});
+
+promise.then(function (result) {
+  alert(result); // 1
+  return result * 2;
+});
+
+promise.then(function (result) {
+  alert(result); // 1
+  return result * 2;
+});
+```
+
 ### promise error 핸들링
 
 - chaining으로 너무 깊이 가지말고 중간중간 catch로 에러를 잡기
@@ -120,7 +147,23 @@ promise //
   .then(cb);
 ```
 
-## 병렬처리
+### promise 체이닝과 에러 처리
+
+❗️ 주의
+
+```js
+let promise = Promise.resolve();
+
+promise.then(() => alert('프라미스 성공!'));
+
+alert('코드 종료'); // 이 얼럿 창이 가장 먼저 나타납니다.
+```
+
+위의 예시와 같이 Promise자체가 비동기적으로 작동하지 않는다. 프로미스가 위와 같이 직시 이행 상태가되어도 '코드종료' alert이 먼저 뜨고, `.then`이 나중에 트리거 된다.
+
+> 어떤 프라미스가 준비되었을 때 이 프라미스의 `.then/catch/finally `핸들러가 큐에 들어간다고 생각하면 된다. 이때 핸들러들은 여전히 실행되지 않다가 현재 코드에서 자유로운 상태가 되었을 때에서야 자바스크립트 엔진은 큐에서 작업을 꺼내 실행된다.
+
+## promise 병렬처리
 
 - Promise.all
 
@@ -129,6 +172,11 @@ promise //
 - async/await를 통해 비동기 코드를 쓰고 Promise를 더 읽기 쉽도록 만들어줌.
 
 ## 비동기 키워드
+
+`async`
+
+- function앞에 async를 붙이면 해당 함수는 항상 프로미스를 반환
+- 프로미스가 아닌 값을 반환하더라도 이행 ㅅ항태의 프로미스로 값을 감싸 이행된 프로미스가 반환
 
 `await`
 
@@ -150,7 +198,7 @@ promise //
 function timeoutPromise(interval) {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
-      resolve("done");
+      resolve('done');
     }, interval);
   });
 }
@@ -175,12 +223,11 @@ async function timeTest() {
 
 🔍 참고자료
 
-- https://developer.mozilla.org/ko/docs/Learn/JavaScript/Asynchronous/Introducing
-- https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise
-- https://developer.mozilla.org/ko/docs/Learn/JavaScript/Asynchronous/Async_await
-- https://ko.javascript.info/async
+- [프라미스와 async, await - ko.javascript.info](https://ko.javascript.info/async)
+- [Asynchronous/Introducing - mdn](https://developer.mozilla.org/ko/docs/Learn/JavaScript/Asynchronous/Introducing)
+- [Promise - mdn](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+- [Async_await - mdn](https://developer.mozilla.org/ko/docs/Learn/JavaScript/Asynchronous/Async_await)
 - https://poiemaweb.com/es6-promise
 - https://poiemaweb.com/js-async
 - https://poiemaweb.com/js-event
-- https://www.youtube.com/watch?v=s1vpVCrT8f4
 - https://joshua1988.github.io/web-development/javascript/promise-for-beginners/
