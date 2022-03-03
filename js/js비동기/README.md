@@ -60,6 +60,12 @@ Promise is a Javascript object for asynchronous operation.
 
 `Producer`와 `Consumer`로 나눠서 생각하면 편하다.
 
+💡 `Producer로 내용은 실행되었지만 결과를 아직 반환하지 않은 객체를 만들고, then을 붙여서 결과를 반환한다. 실행이 완료되지 않았으면 완료된 후에 then 내부 함수가 시행된다.`
+
+- Resolve -> then: 성공
+- Reject -> catch: 실패
+- Finally: 무조건 실행
+
 ```js
 // 1. Producer
 // When new Promise is created, the executor runs automaitcally
@@ -103,6 +109,54 @@ const promise = new Promise((resolve, reject) => {
   }
 });
 ```
+
+### Promise.prototype.then()
+
+then() 메서드는 Promise를 리턴하고 두 개의 콜백 함수를 인수로 받는다. 하나는 Promise가 resolve되었을 때, 다른 하나는 reject되었을 때를 위한 콜백 함수다.
+
+만약, 매개변수 중 하나 이상을 생략했거나 함수가 아닌 값을 전달한 경우(then 바로 이전의 Promise가 then에 핸들러가 없는 상태로 완료(이행이나 거부)했을 경우), 추가 핸들러가 없는 Promise가 생성되며, 원래 Promise의 마지막 상태를 그대로 물려받는다.
+
+```js
+// p.then(onFulfilled, onRejected);
+
+// p.then(function(value) {
+//   // onFulfilled: 이행 값 하나를 인수로 받음
+// }, function(reason) {
+//   // onRejected: 거부 이유 하나를 인수로 받음
+// });
+
+const promise = (idx) =>
+  new Promise((resolve, reject) => {
+    // 1번
+    if (idx % 2 === 0) {
+      resolve('짝수');
+    } else {
+      reject('홀수');
+    }
+  });
+
+// 2번
+
+promise(testNumber).then(
+  // 3번
+  function (value) {
+    console.log(value); // testNumber가 짝수일 때
+  },
+  function (reason) {
+    console.log(reason); // testNumber가 홀수일 때
+  }
+);
+//4번
+```
+
+- 2번 -> 1번 -> 4번 -> 3번 순
+
+> `함수가 값을 반환`할 경우, then에서 반환한 프로미스는 그 반환값을 자신의 결과값으로 하여 이행합니다.
+> `값을 반환하지 않을` 경우, then에서 반환한 프로미스는 undefined를 결과값으로 하여 이행합니다.
+> `오류`가 발생할 경우, then에서 반환한 프로미스는 그 오류를 자신의 결과값으로 하여 거부합니다.
+> `이미 이행한 프로미스를 반환`할 경우, then에서 반환한 프로미스는 그 프로미스의 결과값을 자신의 결과값으로 하여 이행합니다.
+> `이미 거부한 프로미스를 반환`할 경우, then에서 반환한 프로미스는 그 프로미스의 결과값을 자신의 결과값으로 하여 거부합니다.
+> `대기 중인 프로미스를 반환`할 경우, then에서 반환한 프로미스는 그 프로미스의 이행 여부와 결과값을 따릅니다.
 
 ❗️ 주의
 
@@ -166,6 +220,7 @@ alert('코드 종료'); // 이 얼럿 창이 가장 먼저 나타납니다.
 ## promise 병렬처리
 
 - Promise.all
+- Promise.allSettled: 실패한 것만 추려낼 수 있음
 
 # async await
 
@@ -227,7 +282,8 @@ async function timeTest() {
 - [Asynchronous/Introducing - mdn](https://developer.mozilla.org/ko/docs/Learn/JavaScript/Asynchronous/Introducing)
 - [Promise - mdn](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [Async_await - mdn](https://developer.mozilla.org/ko/docs/Learn/JavaScript/Asynchronous/Async_await)
-- https://poiemaweb.com/es6-promise
-- https://poiemaweb.com/js-async
-- https://poiemaweb.com/js-event
-- https://joshua1988.github.io/web-development/javascript/promise-for-beginners/
+- [노드교과서 개정판 2-8. Promise, async/await - ZeroCho 강의](https://www.youtube.com/watch?v=NEaDPHNflGI&t=356s)
+- [es6-promise - poiemaweb](https://poiemaweb.com/es6-promise)
+- [js-async - poiemaweb](https://poiemaweb.com/js-async)
+- [js-event - poiemaweb](https://poiemaweb.com/js-event)
+- [자바스크립트 Promise 쉽게 이해하기 - captain pangyo블로그](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)
