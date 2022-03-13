@@ -60,6 +60,10 @@ Java 기반 RDBMS
 
 ![스크린샷 2022-02-09 오후 11 07 39](https://user-images.githubusercontent.com/71386219/153217552-9359c90e-dd8c-425a-8a08-e18ef402325e.png)
 
+4. 저장위치
+
+데이터의 기본 저장위치는 root디렉토리이다. 기본적으로 `test.mv.db`파일로 저장되고, `JDBC URL`을 jdbc:h2:~/MPTest와 같이 설정하면 `MPTest.mv.db`와 같은 파일로 저장된다.
+
 ✅ 참고자료
 
 - [h2 공식문서](https://www.h2database.com/html/main.html)
