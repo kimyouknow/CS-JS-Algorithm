@@ -2,6 +2,8 @@
 
 spring, django같은 웹 어플리케이션의 동작원리를 살펴보자
 
+쉽게 말해, `프론트엔드와 백엔드가 분리되기 전의 배포는 프론트엔드가 백엔드 배포에 종속 되어 서버가 유저가 요구하는 모든 리소스를 보내주던 시절의 웹개발`
+
 > 클라이언트가 요청을 보내면 서버에 존재하는 웹 어플리케이션 데이터베이스와 서버와 통신하여 필요한 데이터를 가져오고, 해당 데이터를 가지고 html,css,js 파일들을 만들어서 클라이언트에게 제공
 
 # 프론트와 백을 분리해서 배포
@@ -61,6 +63,20 @@ spring, django같은 웹 어플리케이션의 동작원리를 살펴보자
 
 ![R1280x0-4](https://user-images.githubusercontent.com/71386219/156091281-4893a626-00a9-4ca8-9990-a4c4d5af88b8.png)
 
+## 기존의 페이지 덩어리(JSP/Servlet)를 'CSR View 영역'과 'SSR View 영역', 그리고 'API'로 분리함으로써 프런트엔드와 백엔드 영역에서 담당하는 페이지의 역할을 나누기
+
+> [어서 와, SSR은 처음이지? - 도입 편](https://d2.naver.com/helloworld/7804182)해당 글의 내용을 아~~~~주 간단히 필요한 부분만 가져왔다. 자세한 내용은 해당 글을 꼭! 읽어야한다.
+
+## SPA 방식으로 다음과 같이 분리
+
+![spa전환](https://user-images.githubusercontent.com/71386219/158130986-884dc45c-b032-4ea9-8000-d03165d73a8b.png)
+
+## SSR 방식으로 다음과 같이 분리
+
+기존에 CSR 페이지는 프런트엔드에서 개발하고 SSR 페이지는 백엔드에서 개발을 했다면, SSR 환경을 구축하면 페이지의 소유권이 온전히 프런트엔드에 존재하므로 페이지가 변경될 때마다 불필요한 커뮤니케이션을 할 필요가 없어진다.
+
+![ssr전환](https://user-images.githubusercontent.com/71386219/158130995-3f82ba5b-e7cf-4d98-bf50-3227fbabf7a7.png)
+
 # 요약 정리
 
 ```
@@ -77,3 +93,5 @@ API 요청을 할 때는 클라이언트(브라우저) <-> 백엔드 서버 <-> 
 
 - [React 프론트 엔드와 백 엔드 분리 시 동작 원리 (vs 풀 스택) - tistory](https://it-eldorado.tistory.com/85)
 - [프론트 배포를 위한 잡다한 사전 지식](https://iborymagic.tistory.com/94)
+- [프론트엔드 개발자의 인프라 공부](https://maxkim-j.github.io/posts/frontend-infrastructure)
+- [어서 와, SSR은 처음이지? - 도입 편](https://d2.naver.com/helloworld/7804182)
