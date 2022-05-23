@@ -13,7 +13,7 @@ function Component() {
 }
 ```
 
-**흐름: 컴포넌트 호출 → 모든 내부 변수 초기화 → 렌더링**
+**흐름: 컴포넌트 호출 → 모든 내부 변수 초기화 → 렌더링**
 
 ## 2. Reference type
 
@@ -189,6 +189,10 @@ hooks에 넘겨주는 `함수 자체는 기본적으로 항상 렌더링마다 �
 2. Rendering이 자주일어날 경우
 3. re-rendering이 되는 동안에도 계속 같은 props값이 전달될 경우
 4. UI element의 양이 많은 컴포넌트의 경우
+
+[https://alexsidorenko.com/blog/react-render-always-rerenders/](https://alexsidorenko.com/blog/react-render-always-rerenders/)
+
+[https://alexsidorenko.com/blog/react-list-rerender/](https://alexsidorenko.com/blog/react-list-rerender/)
 
 ```jsx
 function Parent() {
