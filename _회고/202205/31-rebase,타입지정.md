@@ -2,6 +2,7 @@
 
 <details>
 <summary>시간대별 정리</summary>
+
 ### 아침
 
 rebase 공부
@@ -21,7 +22,6 @@ pr제출
 pr피드백 및 canvas 차트 그리기
 
 </details>
-<br>
 
 # 코드스쿼드
 

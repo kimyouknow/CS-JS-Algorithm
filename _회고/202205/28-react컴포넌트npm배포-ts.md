@@ -9,7 +9,6 @@ react컴포넌트 npm 배포
 tsc 옵션 공부
 
 </details>
-<br>
 
 # 코드스쿼드
 
