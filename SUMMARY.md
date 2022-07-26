@@ -40,6 +40,7 @@
 ## Test
 
 - [jest - mock&spy](test/jest/mock%26spy.md)
+- [프론트에서 테스크코드짜기](test/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%90%EC%84%9C%20%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BD%94%EB%93%9C.md)
 
 ## Webpack
 
@@ -179,3 +180,9 @@
   - [14-단위 테스트 및 통합테스트 게시글 CRUD 연습,react forceUpdate](회고/202207/14-%EB%8B%A8%EC%9C%84%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%B0%8F%20%ED%86%B5%ED%95%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EA%B2%8C%EC%8B%9C%EA%B8%80%20CRUD%20%EC%97%B0%EC%8A%B5%2Creact%20forceUpdate.md)
   - [15-무한스크롤,바벨쓰면서타입체킹](회고/202207/15-%EC%9C%A0%EC%A0%80%EC%8A%A4%ED%86%A0%EB%A6%AC%2C%EB%AC%B4%ED%95%9C%EC%8A%A4%ED%81%AC%EB%A1%A4%2C%EB%B0%94%EB%B2%A8%EC%93%B0%EB%A9%B4%EC%84%9C%ED%83%80%EC%9E%85%EC%B2%B4%ED%82%B9.md)
   - [17-7월2주차 주간회고](회고/202207/17-7%EC%9B%942%EC%A3%BC%EC%B0%A8%20%EC%A3%BC%EA%B0%84%ED%9A%8C%EA%B3%A0.md)
+  - [19-webpack5assets,jest,react-test-library,디자이너협업,withLoading](회고/202207/19-webpack5assets%2Cjest%2Creact-test-library%2C%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%ED%98%91%EC%97%85%2CwithLoading.md)
+  - [20-프론트테스트코드,tsES6class,abortController,WithUseInfiniteScroll, 기획자필요성](회고/202207/20-%ED%94%84%EB%A1%A0%ED%8A%B8%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BD%94%EB%93%9C%2CtsES6class%2CabortController%2CWithUseInfiniteScroll%2C%20%EA%B8%B0%ED%9A%8D%EC%9E%90%ED%95%84%EC%9A%94%EC%84%B1.md)
+  - [21-storybook,swagger,WithLoading,useAxios,WithInfiniteScroll.md](회고/202207/21-storybook%2Cswagger%2CWithLoading%2CuseAxios%2CWithInfiniteScroll.md)
+  - [22-class method mocking,proptypes](회고/202207/22-class%20method%20mocking%2Cproptypes.md)
+  - [24-7월3주차주간회고](회고/202207/24-7%EC%9B%943%EC%A3%BC%EC%B0%A8%EC%A3%BC%EA%B0%84%ED%9A%8C%EA%B3%A0.md)
+  - [25-단위테스트 반복되는 로직 처리 고민,web crypto api, express swagger 자동생성기 적용 실패,체계화된 백로그 관리 및 회의록,정리록 필요성](회고/202207/25-%EB%8B%A8%EC%9C%84%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%B0%98%EB%B3%B5%EB%90%98%EB%8A%94%20%EB%A1%9C%EC%A7%81%20%EC%B2%98%EB%A6%AC%20%EA%B3%A0%EB%AF%BC%2Cweb%20crypto%20api%2C%20express%20swagger%20%EC%9E%90%EB%8F%99%EC%83%9D%EC%84%B1%EA%B8%B0%20%EC%A0%81%EC%9A%A9%20%EC%8B%A4%ED%8C%A8%2C%EC%B2%B4%EA%B3%84%ED%99%94%EB%90%9C%20%EB%B0%B1%EB%A1%9C%EA%B7%B8%20%EA%B4%80%EB%A6%AC%20%EB%B0%8F%20%ED%9A%8C%EC%9D%98%EB%A1%9D%2C%EC%A0%95%EB%A6%AC%EB%A1%9D%20%ED%95%84%EC%9A%94%EC%84%B1.md)
