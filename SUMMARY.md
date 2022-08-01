@@ -52,6 +52,14 @@
 - [access token과 refresh token](auth/access%20token%EA%B3%BC%20refresh%20token.md)
 - [OAuth 이해](auth/OAuth.md)
 
+# <<<<<<< HEAD
+
+## Network,Web
+
+- [webserver와was,정적,동적사이트](network-web/webserver%EC%99%80was%2C%EC%A0%95%EC%A0%81%2C%EB%8F%99%EC%A0%81%EC%82%AC%EC%9D%B4%ED%8A%B8.md)
+
+> > > > > > > daily
+
 ## DB
 
 - [mongodb란?](db/mongodb/mongodb%EB%9E%80%3F.md)
@@ -170,6 +178,7 @@
   - [27-oauth예제만들기,좋은개발자란?](회고/202206/27-oauth예제만들기,좋은개발자란?.md)
 
 - [2022년 7월](회고/202207/README.md)
+
   - [03-6월4주차주간회고](회고/202207/03-6월4주차주간회고.md)
   - [06-코드스쿼드정리, nodejs,jest,노션활용](회고/202207/06-%EC%BD%94%EB%93%9C%EC%8A%A4%EC%BF%BC%EB%93%9C%EC%A0%95%EB%A6%AC%2C%20nodejs%2Cjest%2C%EB%85%B8%EC%85%98%ED%99%9C%EC%9A%A9.md)
   - [07-브랜치최신화,nodejs학습,spring개발환경](회고/202207/07-%EB%B8%8C%EB%9E%9C%EC%B9%98%EC%B5%9C%EC%8B%A0%ED%99%94%2Cnodejs%ED%95%99%EC%8A%B5%2Cspring%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD.md)
@@ -186,3 +195,8 @@
   - [22-class method mocking,proptypes](회고/202207/22-class%20method%20mocking%2Cproptypes.md)
   - [24-7월3주차주간회고](회고/202207/24-7%EC%9B%943%EC%A3%BC%EC%B0%A8%EC%A3%BC%EA%B0%84%ED%9A%8C%EA%B3%A0.md)
   - [25-단위테스트 반복되는 로직 처리 고민,web crypto api, express swagger 자동생성기 적용 실패,체계화된 백로그 관리 및 회의록,정리록 필요성](회고/202207/25-%EB%8B%A8%EC%9C%84%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%B0%98%EB%B3%B5%EB%90%98%EB%8A%94%20%EB%A1%9C%EC%A7%81%20%EC%B2%98%EB%A6%AC%20%EA%B3%A0%EB%AF%BC%2Cweb%20crypto%20api%2C%20express%20swagger%20%EC%9E%90%EB%8F%99%EC%83%9D%EC%84%B1%EA%B8%B0%20%EC%A0%81%EC%9A%A9%20%EC%8B%A4%ED%8C%A8%2C%EC%B2%B4%EA%B3%84%ED%99%94%EB%90%9C%20%EB%B0%B1%EB%A1%9C%EA%B7%B8%20%EA%B4%80%EB%A6%AC%20%EB%B0%8F%20%ED%9A%8C%EC%9D%98%EB%A1%9D%2C%EC%A0%95%EB%A6%AC%EB%A1%9D%20%ED%95%84%EC%9A%94%EC%84%B1.md)
+  - [26-webserver,was,동적사이트,정적사이트,문서정리](회고/202207/26-webserver%2Cwas%2C%EB%8F%99%EC%A0%81%EC%82%AC%EC%9D%B4%ED%8A%B8%2C%EC%A0%95%EC%A0%81%EC%82%AC%EC%9D%B4%ED%8A%B8%2C%EB%AC%B8%EC%84%9C%EC%A0%95%EB%A6%AC.md)
+  - [27-테스트단위적절성,aws-ec2,UI에 필요한 데이터 정하기,댓글컴포넌트로직분리](회고/202207/27-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A8%EC%9C%84%EC%A0%81%EC%A0%88%EC%84%B1%2Caws-ec2%2CUI%EC%97%90%20%ED%95%84%EC%9A%94%ED%95%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%95%ED%95%98%EA%B8%B0%2C%EB%8C%93%EA%B8%80%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A1%9C%EC%A7%81%EB%B6%84%EB%A6%AC.md)
+  - [28-AWS-S3,GithubActions,배포환경고민,react-hooks-form개선,useAxios개선](회고/202207/28-AWS-S3%2CGithubActions%2C%EB%B0%B0%ED%8F%AC%ED%99%98%EA%B2%BD%EA%B3%A0%EB%AF%BC%2Creact-hooks-form%EA%B0%9C%EC%84%A0%2CuseAxios%EA%B0%9C%EC%84%A0.md)
+  - [29-nginx,댓글컴포넌트리팩토링](회고/202207/29-nginx%2C%EB%8C%93%EA%B8%80%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81.md)
+  - [31-7월 4주차 주간회고](회고/202207/31-7%EC%9B%94%204%EC%A3%BC%EC%B0%A8%20%EC%A3%BC%EA%B0%84%ED%9A%8C%EA%B3%A0.md)
