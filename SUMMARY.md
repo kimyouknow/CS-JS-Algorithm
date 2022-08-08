@@ -52,13 +52,9 @@
 - [access token과 refresh token](auth/access%20token%EA%B3%BC%20refresh%20token.md)
 - [OAuth 이해](auth/OAuth.md)
 
-# <<<<<<< HEAD
-
 ## Network,Web
 
 - [webserver와was,정적,동적사이트](network-web/webserver%EC%99%80was%2C%EC%A0%95%EC%A0%81%2C%EB%8F%99%EC%A0%81%EC%82%AC%EC%9D%B4%ED%8A%B8.md)
-
-> > > > > > > daily
 
 ## DB
 
@@ -200,3 +196,10 @@
   - [28-AWS-S3,GithubActions,배포환경고민,react-hooks-form개선,useAxios개선](회고/202207/28-AWS-S3%2CGithubActions%2C%EB%B0%B0%ED%8F%AC%ED%99%98%EA%B2%BD%EA%B3%A0%EB%AF%BC%2Creact-hooks-form%EA%B0%9C%EC%84%A0%2CuseAxios%EA%B0%9C%EC%84%A0.md)
   - [29-nginx,댓글컴포넌트리팩토링](회고/202207/29-nginx%2C%EB%8C%93%EA%B8%80%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81.md)
   - [31-7월 4주차 주간회고](회고/202207/31-7%EC%9B%94%204%EC%A3%BC%EC%B0%A8%20%EC%A3%BC%EA%B0%84%ED%9A%8C%EA%B3%A0.md)
+
+- [202208](회고/202208/README.md)
+
+  - [01-회고작성,swagger,브랜치전략](회고/202208/01-%ED%9A%8C%EA%B3%A0%EC%9E%91%EC%84%B1%2Cswagger%2C%EB%B8%8C%EB%9E%9C%EC%B9%98%EC%A0%84%EB%9E%B5.md)
+  - [02-배포환경구축실패,선택과집중](회고/202208/02-%EB%B0%B0%ED%8F%AC%ED%99%98%EA%B2%BD%EA%B5%AC%EC%B6%95%EC%8B%A4%ED%8C%A8%2C%EC%84%A0%ED%83%9D%EA%B3%BC%EC%A7%91%EC%A4%91.md)
+  - [03-cors_proxy해결, 원티드프리보딩사전과제](회고/202208/03-cors_proxy%ED%95%B4%EA%B2%B0%2C%20%EC%9B%90%ED%8B%B0%EB%93%9C%ED%94%84%EB%A6%AC%EB%B3%B4%EB%94%A9%EC%82%AC%EC%A0%84%EA%B3%BC%EC%A0%9C.md)
+  - [07-8월 1주차 주간회고](회고/202208/07-8%EC%9B%94%201%EC%A3%BC%EC%B0%A8%20%EC%A3%BC%EA%B0%84%ED%9A%8C%EA%B3%A0.md)
