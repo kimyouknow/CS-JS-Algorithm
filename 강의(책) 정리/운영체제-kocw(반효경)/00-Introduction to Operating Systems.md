@@ -19,7 +19,7 @@
 
 ## 운영체제(Operating System, OS)란?
 
-![os](./os.png)
+![os](./image/os.png)
 
 컴퓨터 하드웨어 바로 위에 설치되어 사용자 및 다른 모든 소프트웨어와 하드웨어를 연결하는 소프트웨어 계층
 
@@ -113,7 +113,7 @@
 
 ## 운영체제의 구조
 
-![os-structure](./os-structure.png)
+![os-structure](./image/os-structure.png)
 
 ### CPU 스케줄링
 

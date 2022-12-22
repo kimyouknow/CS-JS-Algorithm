@@ -13,7 +13,8 @@
 
 ## 목차
 
-[Introduction to Operating Systems](./Introduction%20to%20Operating%20Systems.md)
+- [Introduction to Operating Systems](./Introduction%20to%20Operating%20Systems.md)
+- [System Structure & Program Execution](./01-System%20Structure%20%26%20Program%20Execution.md)
 
 ## 참고자료
 
