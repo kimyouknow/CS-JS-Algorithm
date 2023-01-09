@@ -19,6 +19,9 @@
 ## 참고자료
 
 [http://www.kocw.or.kr/home/cview.do?mty=p&kemId=1046323](http://www.kocw.or.kr/home/cview.do?mty=p&kemId=1046323)
+
 [https://hyojaedev.tistory.com/28](https://hyojaedev.tistory.com/28)
+
 [https://steady-coding.tistory.com/category/스터디/운영체제 스터디](https://steady-coding.tistory.com/category/%EC%8A%A4%ED%84%B0%EB%94%94/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%20%EC%8A%A4%ED%84%B0%EB%94%94)
+
 [http://www.yes24.com/Product/Goods/90124877](http://www.yes24.com/Product/Goods/90124877)
