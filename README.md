@@ -49,9 +49,9 @@
 - [access token과 refresh token](auth/access%20token%EA%B3%BC%20refresh%20token.md)
 - [OAuth 이해](auth/OAuth.md)
 
-## Network,Web
+## Web
 
-- [webserver와was,정적,동적사이트](network-web/webserver%EC%99%80was%2C%EC%A0%95%EC%A0%81%2C%EB%8F%99%EC%A0%81%EC%82%AC%EC%9D%B4%ED%8A%B8.md)
+- [was와 web server](web/was%26webserver/)
 
 ## DB
 

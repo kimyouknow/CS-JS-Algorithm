@@ -6,7 +6,7 @@
 
 # 정적사이트(Static Pages)와 동적사이트(Dynamic Pages)
 
-![static-vs-dynamic.png](./image/static-vs-dynamic.png)
+![static-vs-dynamic.png](./static-vs-dynamic.png)
 
 ## 정적사이트(Static Pages)
 
@@ -14,7 +14,7 @@
 - 한 요청에 관하여 모든 사용자가 같은 결과를 받는다.
 - 사용자는 서버의 데이터가 변경되지 않는 한 고정된 웹페이지를 보게 된다.
 
-![static.png](image/static.png)
+![static.png](./static.png)
 
 ## 동적사이트(Dynamic Pages)
 
@@ -22,7 +22,7 @@
 - 요청에 관하여 사용자는 조건에 따라 다른 결과를 받는다.
 - 사용자는 상황, 시간, 요청 등에 따라 달라지는 웹 페이지를 보게 된다.
 
-![dynamic.png](./image/dynamic.png)
+![dynamic.png](./dynamic.png)
 
 ## **클라이언트 사이드 렌더링(CSR)은 정적웹? 동적웹?**
 
@@ -36,11 +36,11 @@ React나 Vue로 만든 웹앱 서비스는 웹서버에서 단순히 웹껍데�
 
 이때, 클라이언트의 핵심 작업들은 웹서버에서 가져온 javascript 코드가 담당한다.
 
-![reactt-static.png](./image/reactt-static.png)
+![reactt-static.png](./reactt-static.png)
 
 # Web Server와 WAS의 차이
 
-![webserver-vs-was1.png](./image/webserver-vs-was1.png)
+![webserver-vs-was1.png](./webserver-vs-was1.png)
 
 ## Web Client(사용자 에이전트)
 
@@ -175,7 +175,7 @@ WAS를 통해 요청에 맞는 데이터를 DB에서 가져와 비즈니스 로�
 3) Client -> Web Server -> WAS -> DB
 ```
 
-![web-service-architecture.png](./image/web-service-architecture.png)
+![web-service-architecture.png](./web-service-architecture.png)
 
 🔍 참고자료
 
