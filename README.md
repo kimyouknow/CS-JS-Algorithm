@@ -51,7 +51,7 @@
 
 ## Web
 
-- [was와 web server](web/was%26webserver/)
+- [was와 web server](web/was%26webserver/README.md)
 
 ## DB
 
