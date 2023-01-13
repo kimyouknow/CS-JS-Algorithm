@@ -4,6 +4,18 @@ HTTP를 이해하기 위해서는 TCP/IP 프로토콜에 대한 전반적인 이
 
 TCP/IP은 `인터넷 상에서 데이터를 주고 받을 때 쓰는 독립적인 프로토콜의 집합`을 의미한다.
 
+## OSI 7계층과 비교
+
+![osi-vs-tcpip.png](./osi-vs-tcpip.png)
+
+- OSI 참조 모델은 말그대로 참조 모델일 뿐 실제 사용되는 인터넷 프로토콜은 OSI 참조 모델 7계층 구조를 완전히 따르지는 않는다.
+- 인터넷 프로토콜 스택(Internet Protocol Stack)은 현재 대부분 TCP/IP를 따른다.
+- TCP/IP는 인터넷 프로토콜 중 가장 중요한 역할을 하는 TCP와 IP의 합성어로 데이터의 흐름 관리, 정확성 확인, 패킷의 목적지 보장을 담당한다.
+  - `TCP`: 데이터의 정확성 확인
+  - `IP`: 패킷을 목적지까지 전송
+
+출처: [https://www.guru99.com/difference-tcp-ip-vs-osi-model.html](https://www.guru99.com/difference-tcp-ip-vs-osi-model.html)
+
 ## TCP/IP 4계층
 
 TCP/IP는 4계층으로 구성된다.
@@ -40,7 +52,15 @@ TCP/IP가 계층적으로 구성되어 있음으로 다음과 같은 장점이 �
 
 ## TCP/IP 통신 흐름
 
+- 아래 그림과 같이 단계 별로 헤더(Message -> segment/data gram -> packet -> frame/bit)를 붙여 전송하며 이를 `데이터 캡슐화`라고 한다.
+
+![layer](./layer.png)
+
+- http를 사용한 예시는 아래와 같다.
+
 ![tcpip통신흐름.png](./tcpip%ED%86%B5%EC%8B%A0%ED%9D%90%EB%A6%84.png)
+
+> 출처: 그림으로 배우는 http & network - 우에노 센  저 / 이병억  역
 
 ### 캡슐화
 
@@ -59,12 +79,6 @@ TCP/IP가 계층적으로 구성되어 있음으로 다음과 같은 장점이 �
 - 인터넷 계층: 패킷 ⇒ 세그먼트에 SP와 DP가 포함된 IP헤더가 붙은 형태의 조각
 - 링크 계층: 프레임(데이터 링크 계층), 비트(물리 계층)
 
-## OSI 7계층과 비교
-
-![osi-vs-tcpip.png](./osi-vs-tcpip.png)
-
-출처: [https://www.guru99.com/difference-tcp-ip-vs-osi-model.html](https://www.guru99.com/difference-tcp-ip-vs-osi-model.html)
-
 # MTU와 MSS, PMTUD
 
 ![mtu-mss](mtu-mss.png)
@@ -79,3 +93,51 @@ TCP/IP가 계층적으로 구성되어 있음으로 다음과 같은 장점이 �
 
 - 데이터의 크기(payload)만 가리킨다.
 - MSS = MTU - IP Header 크기 (최소 20 Byte) - TCP Header 크기 (최소 20 Byte)
+
+## 전송계층에서 TCP와 UDP비교
+
+- TCP와 UDP는 4계층인 전송 계층에서 동작
+
+> https://wormwlrm.github.io/2021/09/23/Overview-of-TCP-and-UDP.html
+
+- 두 프로토콜은 모두 패킷을 한 컴퓨터에서 다른 컴퓨터로 전달해주는 IP 프로토콜을 기반으로 구현되어 있지만, 서로 다른 특징을 가지고 있다.
+
+![tcp-udp](./tcp-udp-compare.png)
+
+### TCP
+
+- 연결형 서비스로 가상 회선 방식을 제공
+- 데이터의 전송 순서 보장
+- 데이터의 경계를 구분하지 않음
+- 신뢰성 있는 데이터 전송
+- UDP보다 전송속도가 느림
+- 연결을 설정(3-way handshaking)과 해제(4-way handshaking)
+
+### UDP
+
+- 비연결형 서비스로 데이터그램 방식을 제공
+- 비신뢰성
+- 데이터의 경계를 구분
+- 패킷 오버해드가 적어 네트워크 부하 감소
+- 혼잡 제어를 하지 않기 때문에 TCP보다 빠름
+- TCP의 handshaking 같은 연결 설정이 없음
+
+### 비교 요약
+
+| TCP                                                           | UDP                                                                      |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Connection-oriented protocol (연결지향형 프로토콜)            | Connection-less protocol (비 연결지향형 프로토콜)                        |
+| 신뢰성 O                                                      | 신뢰성 X                                                                 |
+| Connection by byte stream (바이트 스트림을 통한 연결)         | Connection by message stream (메세지 스트림을 통한 연결)                 |
+| Congestion / Flow control (혼잡제어, 흐름제어)                | NO Congestion / Flow control (혼잡제어와 흐름제어 지원 X)                |
+| Ordered, Lower speed (패킷의 순서 보장, 상대적으로 느림)      | Not ordered, Higher speed (패킷의 순서가 보장되지 않음, 상대적으로 빠름) |
+| Reliable data transmission (신뢰성 있는 데이터 전송 - 안정적) | Unreliable data transmission (데이터 전송 보장 X)                        |
+| TCP packet : Segment (세그먼트 TCP 패킷)                      | UDP packet : Datagram (데이터그램 UDP 패킷)                              |
+| HTTP, Email, File transfer에서 사용                           | DNS, Broadcasting(도메인, 실시간 동영상 서비스에서 사용                  |
+
+### 참고자료
+
+- https://wormwlrm.github.io/2021/09/23/Overview-of-TCP-and-UDP.html#osi-7계층-맛보기
+- https://velog.io/@hidaehyunlee/TCP-와-UDP-의-차이
+- https://evan-moon.github.io/2019/10/08/what-is-http3/
+- https://evan-moon.github.io/2019/11/22/tcp-flow-control-error-control/
