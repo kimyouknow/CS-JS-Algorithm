@@ -17,12 +17,14 @@
 - [PGS] : 프로그래머스
 - [LEET] : 리드코드
 
-### git commit example
+### Algorithm 폴더 예시
 
 ```bash
-[BOJ] 문제이름 / 난이도 /
-
-간단한 설명
+.
+├── input.txt # 입력값
+├── 1744.test.js # 테스트 케이스
+├── README.md # 풀이 및 문제 설명
+└── index.js # 코드
 ```
 
 ## Datastructure
