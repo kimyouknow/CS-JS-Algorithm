@@ -1,5 +1,14 @@
 # IP주소 체계
 
+## 공인 IP / 사설 IP / 고정 IP / 유동 IP
+
+- https://inpa.tistory.com/entry/WEB-🌐-IP-기초-사설IP-공인IP-NAT-개념-정말-쉽게-정리
+- https://inpa.tistory.com/entry/WEB-🌐-NAT-란-무엇인가
+
+## NAT
+
+- https://inpa.tistory.com/entry/WEB-🌐-NAT-란-무엇인가#thankYou
+
 ## IPv4 vs IPv6
 
 - IPv4 주소체계
@@ -147,3 +156,4 @@ IP인터넷 주소는 `인터네 주소`로, `네트워크 주소`와 `호스트
 - https://haeunyah.tistory.com/89
 - https://zzang9ha.tistory.com/413
 - https://inpa.tistory.com/entry/WEB-IP-클래스-서브넷-마스크-서브넷팅-총정리
+- https://nordvpn.com/ko/blog/public-ip-and-private-ip/

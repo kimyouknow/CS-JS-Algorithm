@@ -10,8 +10,6 @@
 
 ## IP주소(Internet Protocol Address)란?
 
-> https://terms.naver.com/entry.naver?docId=3571314&cid=59088&categoryId=59096
-
 - 논리적 주소
 - 컴퓨터 네트워크에서 장치들이 서로를 인식하고 통신을 하기 위해 사용하는 특수한 번호
 
@@ -21,8 +19,6 @@
 - 보통 장치의 NIC에 할당
 
 ## IP주소와 MAC주소를 둘 다 사용해야하는 이유
-
-> https://github.com/alstjgg/cs-study/blob/main/네트워크/IP%20%26%20MAC.md#ip-주소-vs-mac-주소
 
 - IP 주소와 MAC 주소를 사용하는 계층이 다르다.
 
@@ -61,3 +57,10 @@ ARP
 RARP
 
 - 물리적 주소인 MAC 주소를 논리적 주소인 IP주소로 변환
+
+## 참고자료
+
+- https://terms.naver.com/entry.naver?docId=3571314&cid=59088&categoryId=59096
+- https://github.com/alstjgg/cs-study/blob/main/네트워크/IP%20%26%20MAC.md#ip-주소-vs-mac-주소
+- 면접을 위한 CS 전공지식 노트 - 주홍철
+- 그림으로 배우는 http & network - 우에노 센  저 / 이병억  역

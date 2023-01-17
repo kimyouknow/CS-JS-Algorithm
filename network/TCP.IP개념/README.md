@@ -137,7 +137,8 @@ TCP/IP가 계층적으로 구성되어 있음으로 다음과 같은 장점이 �
 
 ### 참고자료
 
+- 그림으로 배우는 http & network - 우에노 센  저 / 이병억
+- http완벽가이드 - 데이빗 고울리 , 브라이언 토티 , 마조리 세이어, 세일루 레디, 안슈 아가왈  공저
 - https://wormwlrm.github.io/2021/09/23/Overview-of-TCP-and-UDP.html#osi-7계층-맛보기
-- https://velog.io/@hidaehyunlee/TCP-와-UDP-의-차이
 - https://evan-moon.github.io/2019/10/08/what-is-http3/
 - https://evan-moon.github.io/2019/11/22/tcp-flow-control-error-control/
