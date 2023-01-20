@@ -1,17 +1,161 @@
 # 네트워크
 
 - [네트워크 기초](./%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EA%B8%B0%EC%B4%88/README.md)
-- [TCP.IP 개념](./TCP.IP%EA%B0%9C%EB%85%90/README.md)
-- [TCP.IP 연결 및 해제과정](./TCP.IP%EC%97%B0%EA%B2%B0%20%EB%B0%8F%20%ED%95%B4%EC%A0%9C%20%EA%B3%BC%EC%A0%95/README.md)
 - [라우팅, 라우터, 게이트웨이](./라우팅,라우터,게이트웨이/README.md)
 - [IP주소,MAC주소,ARP,RARP](./IP주소,MAC주소,ARP,RARP/README.md)
+- [IP주소체계](IP주소체계/README.md)
+- [TCP.IP 개념](./TCP.IP%EA%B0%9C%EB%85%90/README.md)
+- [TCP.IP 연결 및 해제과정](./TCP.IP%EC%97%B0%EA%B2%B0%20%EB%B0%8F%20%ED%95%B4%EC%A0%9C%20%EA%B3%BC%EC%A0%95/README.md)
 
-## 면접 질문 정리
+## 질의 응답
+
+### 네트워크 기초
+
+<details>
+<summary> 프로토콜이란? </summary>
+
+프로토콜은 데이터를 교환할 때 따르는 표준화된 통신 규칙이다. 네트워크를 통해 데이터를 주고받기 위해서는 데이터를 작은 조각으로 잘라서 보낸 뒤 네트워크 간 약속한 규칙에 따라 전송해야 한다. 여기서 송신자와 수신자 간에 데이터를 전달하고 전달받는 절차나 데이터 양식 따위를 `프로토콜(protocol)`이라고 한다.
+
+- 애플케이션 계층 / 상위 계층 - 5 ~ 7 계층
+- 데이터 플로 계층 / 하위 계층 - 1 ~ 4 계층
+
+현재 애플케이션 레벨의 프로토콜은 비트 기반이 아닌 문자 기반의 프로토콜이 많이 사용되고 있다. (http, smtp)
+
+</details>
+
+<details>
+<summary> OSI 7계층이란? (TCP/IP와 연관지어서)</summary>
+
+OSI 모델은 표준 프로토콜을 사용하여 다양한 통신 시스템이 통신할 수 있도록 하는 개념 모델이다. OSI 7계층 네트워크 프로토콜이 통신하는 구조를 7개의 계층으로 분리하여 각 계층간 상호 작동하는 방식을 정해 놓은 것이다.
+
+OSI 참조 모델은 말그대로 참조 모델일 뿐 실제 사용되는 인터넷 프로토콜은 OSI 참조 모델 7계층 구조를 완전히 따르지는 않는다. 인터넷 프로토콜 스택(Internet Protocol Stack)은 현재 대부분 TCP/IP를 따른다.
+
+</details>
+
+<details>
+<summary> OSI 7계층을 택하면 좋은점이 무엇일까요?</summary>
+
+OSI 모델은 표준 프로토콜을 사용하여 다양한 통신 시스템이 통신할 수 있도록 하는 개념 모델이다. 현대 인터넷이 OSI모델을 엄격하게 따르지 않지만 다음과 같은 장점이 있기 때문에 사용한다.
+
+- `표준과 학습 도구`: 표준화를 통해 이질적인 포트 문제나 프로토콜 등으로 인한 문제를 해결하여 비용을 절감
+- `모듈화(계층화)`: 계층별의 기능과 통신 과정을 단계별로 나누어서 쉽게 알 수 있고, 특정한 곳에 이상이 생기면 그 단계만 수정할 수 있기 때문에 편리하다.
+
+</details>
+
+<details>
+<summary> 메일 통신흐름을 OSI 모델을 통해 설명한다면?</summary>
+
+[OSI 모델을 통해 데이터가 전송되는 방법](OSI%20모델/README.md)참고
+
+</details>
+
+<details>
+<summary> 이전에 저희 회사의 서비스를 제공받는 모든 고객의 pc에서 서비스 중단 이 일어났습니다. OSI 7계층의 관점으로 몇번째 계층의 문제임을 예상할 수 있을까요?</summary>
+
+한명의 고객이 아닌, “모든 고객의 pc”에서 문제가 생겼으므로, 1계층 혹은 3계층에 문제가 있음을 예상할 수 있다.
+
+</details>
+
+<details>
+<summary> 도메인과 ip 주소에 대해서 설명해보세요.</summary>
+
+인터넷은 서버들을 유일하게 구분할 수 있는 ip 주소를 기본 체계로 이용한다. 하지만 ip 주소는 숫자로 이루어진 조합이라 사람이 기억하기 쉽지 않다. 따라서, 사람이 기억하기 편한 언어 체계의 도메인 이름을 통해 웹 서버에 접속한다.
+
+</details>
+
+<details>
+<summary> IP주소와 MAC주소를 둘 다 사용해야하는 이유</summary>
+
+IP 주소란 논리적 주소로, 컴퓨터 네트워크에서 장치들이 서로를 인식하고 통신하기 위해 사용하는 번호다.
+MAC 주소란 네트워크 인터페이스에 할당된고유 식별자다.
+IP 주소는 네트워크 계층에서 사용하며 MAC 주소는 데이터 링크 계층에서 사용한다.
+
+IP 주소는 전체적인 맵을 보고 방향성을 알려주는 역할을 한다고 생각하면 된다. IP 주소는 네트워크 주소와 호스트 주소로 나뉘므로 실생활에서 우편물이나 택배를 보낼 때 사용하는 계층형 주소 원리와 유사하기 때문이다. 유동 IP의 특징으로 인해 IP 자체가 변동될 수 있기 때문에 절대 변하지 않는 하드웨어의 고유 주소 번호가 필요한데, 그것이 바로 MAC 주소다.
+
+</details>
+
+<details>
+<summary>서브넷팅이란?</summary>
+
+네트워크를 분할하는 것을 서브넷팅이라고 하고 불할된 네트워크를 서브넷이라고 한다. 서브넷팅은 자원을 효율적으로 분배하기 위해 네트워크 영역과 호스트 영역을 쪼개는 작업으로 IP주소를 효울적으로 나누어 사용하기 위한 방법으로 네트워크 성능 보장하고, IP 할당 범위를 더 작은 단위로 나눌 수 있게 된다.
+
+서브넷팅하면 네트워크 ID, 서브넷 ID, 호스트 ID로 나눠지게 되고 IP 주소를 서브넷팅하게 되면 어디까지가 네트워크 ID이고 호스트 ID인지 알기 위해 서브넷 마스크를 사용한다.
+
+</details>
+
+<details>
+<summary> TCP와 UDP는 무엇이며 차이점은 무엇인가요?</summary>
+
+두 프로토콜은 모두 패킷을 한 컴퓨터에서 다른 컴퓨터로 전달해주는 IP 프로토콜을 기반으로 구현되어 있지만, 서로 다른 특징을 가지고 있다.
+
+TCP는 연결형 서비스로 3-way handshaking 과정을 통해 연결을 설정한다. 그렇기 때문에 높은 신뢰성을 보장하지만 속도가 비교적 느리다는 단점이 있다. UDP는 비연결형 서비스로 3-way handshaking을 사용하지 않기 때문에 신뢰성이 떨어지는 단점이 있다. 하지만 수신 여부를 확인하지 않기 때문에 속도가 빠릅니다. TCP는 신뢰성이 중요한 파일 교환과 같은 경우에 쓰이고 UDP는 실시간성이 중요한 스트리밍에 자주 사용한다.
+
+TCP는 다음과 같은 특징이 있다.
+
+- 연결형 서비스로 가상 회선 방식을 제공
+- 데이터의 전송 순서 보장
+- 데이터의 경계를 구분하지 않음
+- 신뢰성 있는 데이터 전송
+- UDP보다 전송속도가 느림
+- 연결을 설정(3-way handshaking)과 해제(4-way handshaking)
+
+UDP는 다음과 같은 특징이 있다.
+
+- 비연결형 서비스로 데이터그램 방식을 제공
+- 비신뢰성
+- 데이터의 경계를 구분
+- 패킷 오버해드가 적어 네트워크 부하 감소
+- 혼잡 제어를 하지 않기 때문에 TCP보다 빠름
+- TCP의 handshaking 같은 연결 설정이 없음
+
+</details>
+
+<details>
+<summary> TCP/IP에 대해 설명해주세요.</summary>
+
+TCP/IP는 애플리케이션, 전송, 인터넷, 링크 계층으로 이루어져있다. OSI 참조 모델은 말그대로 참조 모델일 뿐 실제 사용되는 인터넷 프로토콜은 OSI 참조 모델 7계층 구조를 완전히 따르지는 않는다. 인터넷 프로토콜 스택(Internet Protocol Stack)은 현재 대부분 TCP/IP를 따른다.
+
+- TCP/IP는 인터넷 프로토콜 중 가장 중요한 역할을 하는 TCP와 IP의 합성어로 데이터의 흐름 관리, 정확성 확인, 패킷의 목적지 보장을 담당한다.
+  - `TCP`: 데이터의 정확성 확인
+  - `IP`: 패킷을 목적지까지 전송
+
+송신자가 수신자에게 데이터를 보낼 때 데이터가 각 계층을 지나며 각 계층의 특징들이 담긴 헤더들이 붙여지는 과정을 캡슐화라고 한다. 반대로 수신측에서 각 계층을 거칠 때마다 해당 계층마다 사용한 헤더를 제거하는 과정을 비캡슐화라고 한다. 예시로, 전송계층은 TCP헤더를, 네트워크 계층은 IP주소 헤더를 추가한다.
+
+</details>
+
+<details>
+<summary> 3 way hand shake, 4 way hand shake에 대해서 설명하세요.</summary>
+
+3 way hand shake에서 클라이언트는 서버에 접속을 요청하는 SYN(a) 패킷을 보내고, 서버는 클라이언트의 SYN 패킷에 대한 요청 수락 응답으로 ACK 패킷(a+1과 클라이언트도 포트를 열어달라는 SYN(b) 패킷을 보낸다. 마지막으로 클라이언트는 서버가 보낸 ACK(a+1) 패킷과 SYN(b) 패킷을 받고 이에 대한 응답으로 ACK(b+1) 패킷을 보내며 연결이 성립된다.
+
+4 way hand shake에서 클라이언트는 서버에게 FIN을 보내고 서버는 응답으로 ACK를 보내고 모든 데이터를 다 전송했다면 FIN을 보낸다. 클라이언트는 응답으로 ACK를 보내고 서버는 소켓을 닫고 TIME_WAIT 시간이 끝나면 클라이언트도 소켓을 닫아 연결을 종료한다.
+
+</details>
+
+주소창에 google.com을 치면 일어나는 일을 설명해보세요.
+
+DNS 서버는 무슨 역할을 하나요?
+
+도메인의 구조에 대해서 설명해주세요.
+
+DNS 서버의 Recursive Query 과정을 설명해주세요.
+
+RoundRobin DNS 에 대해 간략하게 설명 해주시겠어요?
+
+Round Robin DNS의 문제점은 무엇이 있을 까요?
+
+이러한 문제점을 해결하기 위한 스케줄링 알고리즘에 대해 설명 해주실 수 있나요?
+
+Http와 Https 통신 방식의 차이?
+
+웹 프로토콜이란?
+
+Http 통신이란?
 
 ## 참고자료
 
-- [https://github.com/WooVictory/Ready-For-Tech-Interview#-network-](https://github.com/WooVictory/Ready-For-Tech-Interview#-network-)
-- [https://github.com/gyoogle/tech-interview-for-developer#network](https://github.com/gyoogle/tech-interview-for-developer#network)
-- [https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Network](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Network)
-- [https://github.com/Seogeurim/CS-study/tree/main/contents/network](https://github.com/Seogeurim/CS-study/tree/main/contents/network)
+- https://github.com/brave-people/brave-tech-interview/blob/main/contents/network.md
+- https://github.com/Seogeurim/CS-study/tree/main/contents/network
 - https://velog.io/@mardi2020/네트워크-면접-질문-정리
+- https://joontae-kim.github.io/2020/10/26/interview-question-network/
+- https://mangkyu.tistory.com/91

@@ -8,13 +8,16 @@
 - 통신 시스템을 7개의 추상적 계층으로 나누며 각 계층은 다음 계층 위에 쌓인다.
 - 현대 인터넷이 OSI모델을 엄격하게 따르지 않지만 OSI 모델의 장점이 있기 때문에 계층을 나눈다.
   - `표준과 학습 도구`: 표준화를 통해 이질적인 포트 문제나 프로토콜 등으로 인한 문제를 해결하여 비용을 절감
-  - `계층화`: 계층별의 기능과 통신 과정을 단계별로 나누어서 쉽게 알 수 있고, 특정한 곳에 이상이 생기면 그 단계만 수정할 수 있기 때문에 편리하다.
+  - `모듈화(계층화)`: 계층별의 기능과 통신 과정을 단계별로 나누어서 쉽게 알 수 있고, 특정한 곳에 이상이 생기면 그 단계만 수정할 수 있기 때문에 편리하다.
 
 ![osi-model-7-layers](./osi-model-7-layers.png)
 
 > 출처: https://www.cloudflare.com/ko-kr/learning/ddos/glossary/open-systems-interconnection-model-osi/
 
 ## OSI 7계층 설명
+
+- 애플케이션 계층 / 상위 계층 - 5 ~ 7 계층
+- 데이터 플로 계층 / 하위 계층 - 1 ~ 4 계층
 
 ### [7] 응용 계층 (Application Layer)
 
@@ -110,6 +113,7 @@
 
 ## 참고자료
 
+- IT 엔지니어를 위한 네트워크 입문 - 고재성,이상훈
 - https://www.cloudflare.com/ko-kr/learning/ddos/glossary/open-systems-interconnection-model-osi/
 - https://github.com/WooVictory/Ready-For-Tech-Interview/blob/master/Network/OSI%207%20계층.md
 - https://github.com/Seogeurim/CS-study/tree/main/contents/network

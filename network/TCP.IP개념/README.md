@@ -20,7 +20,7 @@ TCP/IP은 `인터넷 상에서 데이터를 주고 받을 때 쓰는 독립적�
 
 TCP/IP는 4계층으로 구성된다.
 
-TCP/IP가 계층적으로 구성되어 있음으로 다음과 같은 장점이 있다.
+TCP/IP가 계층적으로 구성되어 있음어서 다음과 같은 장점이 있다.
 
 - 독립적이다.
 - 각 계층은 계층이 연결되어 있는 부분만 결정되어 있어, 각 계층의 내부는 자유롭게 설계 가능하다.
@@ -137,9 +137,10 @@ TCP/IP가 계층적으로 구성되어 있음으로 다음과 같은 장점이 �
 
 ### 참고자료
 
+- IT 엔지니어를 위한 네트워크 입문 - 고재성,이상훈
 - 그림으로 배우는 http & network - 우에노 센  저 / 이병억
 - http완벽가이드 - 데이빗 고울리 , 브라이언 토티 , 마조리 세이어, 세일루 레디, 안슈 아가왈  공저
-- - https://www.cloudflare.com/ko-kr/learning/ddos/glossary/user-datagram-protocol-udp/
+- https://www.cloudflare.com/ko-kr/learning/ddos/glossary/user-datagram-protocol-udp/
 - https://www.cloudflare.com/ko-kr/learning/ddos/glossary/tcp-ip/
 - https://wormwlrm.github.io/2021/09/23/Overview-of-TCP-and-UDP.html#osi-7계층-맛보기
 - https://evan-moon.github.io/2019/10/08/what-is-http3/
