@@ -67,12 +67,6 @@
 
 - [mongodb란?](db/mongodb/mongodb%EB%9E%80%3F.md)
 
-## 강의(책 정리)
-
-- [운영체제 kocw (반효경)](<강의(책)%20정리/운영체제-kocw(반효경)>)
-  - [Introduction to Operating Systems](<강의(책)%20정리/운영체제-kocw(반효경)/Introduction%20to%20Operating%20Systems.md>)
-  - [System Structure & Program Execution](<강의(책)%20정리/운영체제-kocw(반효경)/01-System%20Structure%20%26%20Program%20Execution.md>)
-
 ## 회고
 
 - [목적](회고/README.md)
