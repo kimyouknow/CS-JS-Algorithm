@@ -49,19 +49,23 @@
 - [access token과 refresh token](auth/access%20token%EA%B3%BC%20refresh%20token.md)
 - [OAuth 이해](auth/OAuth.md)
 
-## Network,Web
+## Web
 
-- [webserver와was,정적,동적사이트](network-web/webserver%EC%99%80was%2C%EC%A0%95%EC%A0%81%2C%EB%8F%99%EC%A0%81%EC%82%AC%EC%9D%B4%ED%8A%B8.md)
+- [was와 web server](web/was%26webserver/README.md)
+
+## Network
+
+- [질의 응답하면서 공부한 내용](network/README.md)
+- [네트워크 기초](network/README.md)
+- [라우팅, 라우터, 게이트웨이](network/%EB%9D%BC%EC%9A%B0%ED%8C%85%2C%EB%9D%BC%EC%9A%B0%ED%84%B0%2C%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4/README.md)
+- [IP주소,MAC주소,ARP,RARP](network/IP주소,MAC주소,ARP,RARP/README.md)
+- [IP주소체계](network/IP주소체계/README.md)
+- [TCP / IP 개념](network/TCP.IP개념/README.md)
+- [TCP/IP 연결 및 해제과정](network/TCP.IP%EC%97%B0%EA%B2%B0%20%EB%B0%8F%20%ED%95%B4%EC%A0%9C%20%EA%B3%BC%EC%A0%95/README.md)
 
 ## DB
 
 - [mongodb란?](db/mongodb/mongodb%EB%9E%80%3F.md)
-
-## 강의(책 정리)
-
-- [운영체제 kocw (반효경)](</%EA%B0%95%EC%9D%98(%EC%B1%85)%20%EC%A0%95%EB%A6%AC>)
-  - [Introduction to Operating Systems](<./%EA%B0%95%EC%9D%98(%EC%B1%85)%20%EC%A0%95%EB%A6%AC/Introduction%20to%20Operating%20Systems.md>)
-  - [System Structure & Program Execution](<./%EA%B0%95%EC%9D%98(%EC%B1%85)%20%EC%A0%95%EB%A6%AC/01-System%20Structure%20%26%20Program%20Execution.md>)
 
 ## 회고
 
