@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const rawInputs = fs
   //	.readFileSync('/dev/stdin')
-  .readFileSync(path.resolve(__dirname, '../1753-g4/1.txt'))
+  .readFileSync(path.resolve(__dirname, '../1753-g4-최단경로/1.txt'))
   .toString()
   .trim()
   .split('\n')
@@ -97,7 +97,6 @@ const solution = (rawInputs) => {
   const [[v, e], [k], ...arr] = rawInputs;
   const graph = Array.from({ length: v + 1 }, () => []);
   const dist = Array.from({ length: v + 1 }, () => Number.MAX_SAFE_INTEGER);
-  const visited = Array.from({ length: v + 1 }, () => false);
 
   arr.forEach(([u, v, w]) => graph[u].push([v, w]));
 
