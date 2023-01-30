@@ -1,9 +1,9 @@
-export type Compare = (a: number, b: number) => boolean;
+export type Compare<T> = (a: T, b: T) => boolean;
 
-export default class Heap {
-  private arr: Array<number>;
-  private compare: Compare;
-  constructor(compare: Compare) {
+export default class Heap<T> {
+  private arr: Array<T>;
+  private compare;
+  constructor(compare: Compare<T>) {
     this.arr = []; // 0번 인덱스는 사용하지 않는다.
     this.compare = compare;
   }
@@ -19,7 +19,7 @@ export default class Heap {
   getRightChildIndex(i: number) {
     return i * 2 + 2;
   }
-  private push(value: number) {
+  private push(value: T) {
     this.arr.push(value);
     return this;
   }
@@ -74,7 +74,7 @@ export default class Heap {
     }
     return this;
   }
-  insert(value: number) {
+  insert(value: T) {
     return this.push(value).heapifyUp();
   }
   poll() {
@@ -100,13 +100,13 @@ export default class Heap {
 
 const mockArr = [-3, -7, 3, 7, 2, 1, 5, 9, 10, -5];
 
-const minHeap = new Heap((a, b) => a < b);
+const minHeap = new Heap((a: number, b: number) => a < b);
 mockArr.forEach((v) => minHeap.insert(v));
 console.log('heap', minHeap.showEntireMinHeap());
 const minRes = mockArr.map((v) => minHeap.poll());
 console.log('minRes', minRes);
 
-const maxHeap = new Heap((a, b) => a > b);
+const maxHeap = new Heap((a: number, b: number) => a > b);
 mockArr.forEach((v) => maxHeap.insert(v));
 console.log('heap', maxHeap.showEntireMinHeap());
 const maxRes = mockArr.map((v) => maxHeap.poll());

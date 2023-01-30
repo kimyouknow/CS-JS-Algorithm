@@ -1,10 +1,10 @@
-import { PrioirtyQueue } from '@datastructure/PriorityQueue';
+import { PriorityQueue } from '@datastructure/PriorityQueue';
 
-describe('Prioirty Queue ADT test', () => {
-  let pq: PrioirtyQueue;
+describe('Priority Queue ADT test', () => {
+  let pq: PriorityQueue<number>;
   let mockArr: number[];
   beforeEach(() => {
-    pq = new PrioirtyQueue((a, b) => a > b); // max
+    pq = new PriorityQueue((a, b) => a > b); // max
     mockArr = Array.from({ length: 100 }, () => Math.floor(Math.random() * 100));
   });
   it('Result of dequeue should be ascending order', () => {

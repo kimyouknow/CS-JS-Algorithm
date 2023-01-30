@@ -14,7 +14,7 @@ describe('Heap datastructure test', () => {
     });
   });
   describe('Push: push new value to Min Heap', () => {
-    let minHeap: Heap;
+    let minHeap: Heap<number>;
     let spyOnPush: jest.SpyInstance;
     const mockValue = 4;
     beforeEach(() => {
@@ -36,7 +36,7 @@ describe('Heap datastructure test', () => {
     });
   });
   describe('Swap: switch index of node1 and node2', () => {
-    let minHeap: Heap;
+    let minHeap: Heap<number>;
     let spyOnSwap: jest.SpyInstance;
     const node1 = 3;
     const node2 = 4;
@@ -79,7 +79,7 @@ describe('Heap datastructure test', () => {
     });
   });
   describe('HeapifyUp: children nodes should be bigger than parent node', () => {
-    let minHeap: Heap;
+    let minHeap: Heap<number>;
     let spyOnHeapifyUp: jest.SpyInstance;
     beforeEach(() => {
       minHeap = new Heap(minCompare);
@@ -101,7 +101,7 @@ describe('Heap datastructure test', () => {
     });
   });
   describe('Insert new Node into min heap', () => {
-    let minHeap: Heap;
+    let minHeap: Heap<number>;
     let spyOnInsert: jest.SpyInstance;
     let mockInsertValues = [3, 7, 2, 1, 5, 9, 10];
     beforeEach(() => {
@@ -122,7 +122,7 @@ describe('Heap datastructure test', () => {
     });
   });
   describe('Poll & heapifyDown: extract root node', () => {
-    let minHeap: Heap;
+    let minHeap: Heap<number>;
     let spyOnHeapifyDown: jest.SpyInstance;
     let spyOnPoll: jest.SpyInstance;
     let mockInsertValues = [3, 7, 2, 1, 5, 9, 10];
@@ -169,9 +169,9 @@ describe('Heap datastructure test', () => {
     });
   });
   describe('Entire action', () => {
-    let minHeap: Heap;
-    let maxHeap: Heap;
-    let absoulteHeap: Heap;
+    let minHeap: Heap<number>;
+    let maxHeap: Heap<number>;
+    let absoulteHeap: Heap<number>;
     let mockArr = [-3, -7, 3, 7, 2, 1, 5, 9, 10, -5];
     beforeEach(() => {
       minHeap = new Heap(minCompare);
