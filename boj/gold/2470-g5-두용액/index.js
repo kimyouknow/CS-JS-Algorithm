@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const rawInputs = fs
   //	.readFileSync('/dev/stdin')
-  .readFileSync(path.resolve(__dirname, '../2470-g5/1.txt'))
+  .readFileSync(path.resolve(__dirname, '../2470-g5-두용액/1.txt'))
   .toString()
   .trim()
   .split('\n')
