@@ -2,11 +2,11 @@ import { getRandomInt } from '@utils/utils';
 import {
   findLastNode,
   INodeElement,
-  ISignleLinkedList,
+  ISingleLinkedList,
   NodeBody,
   NodeElement,
   handleMethodWithRandomNumber,
-  SignleLinkedList,
+  SingleLinkedList,
   generateInstance,
   success,
   fail,
@@ -46,7 +46,7 @@ describe('LinkedList Tester', () => {
         randomInt = getRandomInt(1, 10);
       });
       it('연결리스트 인스턴스의 push메서드 존재', () => {
-        const mockSingleLinkedList = new SignleLinkedList();
+        const mockSingleLinkedList = new SingleLinkedList();
         expect(typeof mockSingleLinkedList.push).toBe('function');
         expect(mockSingleLinkedList.push(mockNodeLast)).toBe(success);
       });
@@ -103,7 +103,7 @@ describe('LinkedList Tester', () => {
         randomInt = getRandomInt(1, 10);
       });
       it('연결리스트 인스턴스의 unshift메서드 존재', () => {
-        const mockSingleLinkedList = new SignleLinkedList();
+        const mockSingleLinkedList = new SingleLinkedList();
         expect(typeof mockSingleLinkedList.push).toBe('function');
         expect(mockSingleLinkedList.unshift(mockNodeBody)).toBe(success);
       });
@@ -134,7 +134,7 @@ describe('LinkedList Tester', () => {
   });
 
   describe('search()', () => {
-    let mockSingleLinkedList: ISignleLinkedList;
+    let mockSingleLinkedList: ISingleLinkedList;
     let randomInt: number;
     beforeEach(() => {
       mockSingleLinkedList = generateInstance();
@@ -161,7 +161,7 @@ describe('LinkedList Tester', () => {
   });
 
   describe('insert()', () => {
-    let mockSingleLinkedList: ISignleLinkedList;
+    let mockSingleLinkedList: ISingleLinkedList;
     let randomInt: number;
     beforeEach(() => {
       mockSingleLinkedList = generateInstance();
@@ -209,7 +209,7 @@ describe('LinkedList Tester', () => {
   });
 
   describe('delete()', () => {
-    let mockSingleLinkedList: ISignleLinkedList;
+    let mockSingleLinkedList: ISingleLinkedList;
     let randomInt: number;
     beforeEach(() => {
       mockSingleLinkedList = generateInstance();

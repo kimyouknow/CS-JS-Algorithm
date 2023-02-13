@@ -1,6 +1,6 @@
-import { Nullable } from '@/utils/types';
+import { Nullable } from '@utils/types';
 
-export const success = 'sucess' as const;
+export const success = 'success' as const;
 export const fail = 'fail' as const;
 export type resultType = typeof success | typeof fail;
 export type NodeBody = { [key: string]: any } | string | number;
@@ -11,13 +11,13 @@ export interface INodeElement {
   body: NodeBody;
 }
 
-export interface ISignleLinkedList {
+export interface ISingleLinkedList {
   size: number;
   head: Nullable<NodeElement>;
   getHead: () => Nullable<NodeElement>;
   getSize: () => number;
   addSize: () => void;
-  substractSize: () => void;
+  subtractSize: () => void;
   push: (data: NodeBody) => resultType;
   unshift: (data: NodeBody) => resultType;
   search: (index: number) => Nullable<INodeElement>;
@@ -37,7 +37,7 @@ export const findLastNode = (headNode: INodeElement) => {
 export const handleMethodWithRandomNumber = (
   method: 'push' | 'unshift',
   randomInt: number,
-  mockSingleLinkedList: ISignleLinkedList,
+  mockSingleLinkedList: ISingleLinkedList,
   mockNodeBody: NodeBody
 ) => {
   for (let i = randomInt; i > 0; i--) {
@@ -45,7 +45,7 @@ export const handleMethodWithRandomNumber = (
   }
 };
 
-export const generateInstance = () => new SignleLinkedList();
+export const generateInstance = () => new SingleLinkedList();
 
 export const generateInstanceWithMockArray = (
   method: 'push' | 'unshift',
@@ -65,7 +65,7 @@ export class NodeElement implements INodeElement {
   }
 }
 
-export class SignleLinkedList implements ISignleLinkedList {
+export class SingleLinkedList implements ISingleLinkedList {
   size: number;
   head: Nullable<NodeElement>;
   constructor() {
@@ -81,7 +81,7 @@ export class SignleLinkedList implements ISignleLinkedList {
   addSize() {
     this.size++;
   }
-  substractSize() {
+  subtractSize() {
     this.size--;
   }
   push(data: NodeBody) {
@@ -156,7 +156,7 @@ export class SignleLinkedList implements ISignleLinkedList {
       count++;
     }
     beforeCurrent.next = current.next;
-    this.substractSize();
+    this.subtractSize();
     return success;
   }
   printNodes() {
