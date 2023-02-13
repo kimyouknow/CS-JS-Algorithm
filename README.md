@@ -8,7 +8,7 @@
 
   - [자바스크립트 모듈 (깊게 이해하기)](js/module/README.md)
   - [babel](advancedJS/babel.md)
-  - [자바스크립트 모듈과 export/import ](advancedJS/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EB%AA%A8%EB%93%88%EA%B3%BC%20export-import.md)
+  - [자바스크립트 모듈과 export/import](advancedJS/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EB%AA%A8%EB%93%88%EA%B3%BC%20export-import.md)
 
 - Advanced JS
 
@@ -24,8 +24,7 @@
 
 - hooks
 
-  - [useState 자주할 수 있는 실수 및 useEffect 동작 이해하기
-    ](react/Hooks/%20useState%20%EC%9E%90%EC%A3%BC%ED%95%A0%20%EC%88%98%20%EC%9E%88%EB%8A%94%20%EC%8B%A4%EC%88%98%20%EB%B0%8F%20useEffect%20%EB%8F%99%EC%9E%91%20%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0.md)
+  - [useState 자주할 수 있는 실수 및 useEffect 동작 이해하기](react/Hooks/%20useState%20%EC%9E%90%EC%A3%BC%ED%95%A0%20%EC%88%98%20%EC%9E%88%EB%8A%94%20%EC%8B%A4%EC%88%98%20%EB%B0%8F%20useEffect%20%EB%8F%99%EC%9E%91%20%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0.md)
   - [useCallback,useMemo,React.memo](react/Hooks/useCallback%2CuseMemo%2CReact.memo.md)
   - [react-redux,contextAPI,useReducer](react/Hooks/react-redux%2CcontextAPI%2CuseReducer.md)
   - [hooks Dependency (참조타입 vs 원시타입)](<react/Hooks/hooks%20Dependency%20(%EC%B0%B8%EC%A1%B0%ED%83%80%EC%9E%85%20vs%20%EC%9B%90%EC%8B%9C%ED%83%80%EC%9E%85).md>)
@@ -52,6 +51,8 @@
 ## Web
 
 - [was와 web server](web/was%26webserver/README.md)
+- [브라우저 렌더링 과정](web/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EB%A0%8C%EB%8D%94%EB%A7%81/)
+- [script 태그 위치](web/script%ED%83%9C%EA%B7%B8%EC%9C%84%EC%B9%98/)
 
 ## Network
 
