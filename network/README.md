@@ -9,8 +9,6 @@
 
 ## 질의 응답
 
-### 네트워크 기초
-
 <details>
 <summary> 프로토콜이란? </summary>
 
@@ -242,10 +240,19 @@ DNS 시스템은 ip주소와 도메인 이름의 매핑을 관리합니다. DNS 
 
 </details>
 
-<details>
-<summary> 도메인의 구조에 대해서 설명해주세요. </summary>
+도메인의 구조에 대해서 설명해주세요.
 
-도메인은 .(dot) 또는 루트(root)라고 불리는 도메인 이하에 Inverted tree 구조로 구성되어 있습니다. 1단계부터 차례대로 TLD(Top Level Domain), SLD(Second Level Domain), SubDomain이라고 합니다.
+<details>
+<summary> DNS 서버는 무슨 역할을 하나요? </summary>
+
+DNS 시스템은 ip주소와 도메인 이름의 매핑을 관리합니다. DNS 서버는 ip 주소와 도메인 간의 변환 작업을 수행하며, 사용자가 도메인 이름을 웹 브라우저에 입력하면 해당 사용자를 어떤 서버에 연결할 것인지를 제어하는 역할을 합니다.
+
+</details>
+
+<details>
+<summary> 도메인과 ip 주소에 대해서 설명해보세요. </summary>
+
+인터넷은 서버들을 유일하게 구분할 수 있는 ip 주소를 기본 체계로 이용합니다. 하지만 ip 주소는 숫자로 이루어진 조합이라 인간이 기억하기엔 무리가 있습니다. 따라서 우리는 기억하기 편한 언어 체계의 도메인 이름을 통해 웹 서버에 접속합니다.
 
 </details>
 
