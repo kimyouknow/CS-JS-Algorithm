@@ -1,6 +1,6 @@
 const topDiv = document.querySelector('.top');
 const middleDiv = document.querySelector('.middle');
-const bottonDiv = document.querySelector('.botton');
+const bottomDiv = document.querySelector('.bottom');
 const log = document.querySelector('.log');
 
 function handler(e) {
@@ -15,8 +15,8 @@ function stopBubbling(e) {
 // topDiv.addEventListener('click', handler);
 // topDiv.addEventListener('click', stopBubbling);
 // middleDiv.addEventListener('click', handler);
-// bottonDiv.addEventListener('click', stopBubbling);
-bottonDiv.addEventListener('click', handler);
+// bottomDiv.addEventListener('click', stopBubbling);
+bottomDiv.addEventListener('click', handler);
 
 document.addEventListener('click', function (event) {
   if (event.target.dataset.counter !== undefined) {

@@ -14,16 +14,17 @@
   - [babel](advancedJS/babel.md)
   - [자바스크립트 모듈과 export/import](advancedJS/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EB%AA%A8%EB%93%88%EA%B3%BC%20export-import.md)
   - [Node와 HtmlElement](js/Node%EC%99%80%20HtmlElement/)
+  - [Event](js/Event/)
 
 - Advanced JS
 
   - [axios interceptor 세팅 및 활용](advancedJS/axios%20interceptor%20%EC%84%B8%ED%8C%85%20%EB%B0%8F%20%ED%99%9C%EC%9A%A9.md)
 
-- Node JS
+## Web
 
-  - [NodeJS란?](nodejs/NodeJS%EB%9E%80%3F.md)
-  - [NodeJS의 내부 동작 원리](nodejs/NodeJS%EC%9D%98%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%20%EC%9B%90%EB%A6%AC.md)
-  - [nodejs with es6 - jest, typescript,nodemon,babel 세팅](nodejs/nodejs%20with%20es6%20-%20jest%2C%20typescript%2Cnodemon%2Cbabel%20%EC%84%B8%ED%8C%85.md)
+- [was와 web server](web/was%26webserver/README.md)
+- [브라우저 렌더링 과정](web/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EB%A0%8C%EB%8D%94%EB%A7%81/)
+- [script 태그 위치](web/script%ED%83%9C%EA%B7%B8%EC%9C%84%EC%B9%98/)
 
 ## React
 
@@ -53,12 +54,6 @@
 - [access token과 refresh token](auth/access%20token%EA%B3%BC%20refresh%20token.md)
 - [OAuth 이해](auth/OAuth.md)
 
-## Web
-
-- [was와 web server](web/was%26webserver/README.md)
-- [브라우저 렌더링 과정](web/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EB%A0%8C%EB%8D%94%EB%A7%81/)
-- [script 태그 위치](web/script%ED%83%9C%EA%B7%B8%EC%9C%84%EC%B9%98/)
-
 ## Network
 
 - [질의 응답하면서 공부한 내용](network/README.md)
@@ -72,6 +67,12 @@
 - [http](network/http/)
 - [uri, url, urn](network/uri.url.urn/)
 - [dns](network/dns/)
+
+## Node JS
+
+- [NodeJS란?](nodejs/NodeJS%EB%9E%80%3F.md)
+- [NodeJS의 내부 동작 원리](nodejs/NodeJS%EC%9D%98%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%20%EC%9B%90%EB%A6%AC.md)
+- [nodejs with es6 - jest, typescript,nodemon,babel 세팅](nodejs/nodejs%20with%20es6%20-%20jest%2C%20typescript%2Cnodemon%2Cbabel%20%EC%84%B8%ED%8C%85.md)
 
 ## DB
 
