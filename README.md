@@ -15,6 +15,7 @@
   - [자바스크립트 모듈과 export/import](advancedJS/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EB%AA%A8%EB%93%88%EA%B3%BC%20export-import.md)
   - [Node와 HtmlElement](js/Node%EC%99%80%20HtmlElement/)
   - [Event](js/Event/)
+  - [프로토타입과 프로토타입 상속](js/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85/)
 
 - Advanced JS
 
