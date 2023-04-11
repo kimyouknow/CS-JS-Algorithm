@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const rawInputs = fs
   //	.readFileSync('/dev/stdin')
-  .readFileSync(path.resolve(__dirname, '../2110-g5/1.txt'))
+  .readFileSync(path.resolve(__dirname, '../2110-g4-공유기설치/1.txt'))
   .toString()
   .trim()
   .split('\n');
@@ -14,28 +14,28 @@ const solution = (rawInputs) => {
   const asc = arr.map((v) => +v).sort((a, b) => a - b);
   let answer = -1;
 
+  // m=diff 간격으로 정렬된 집 배열을 선형탐색 했을 때 공유기 설치 개수
   const calc = (diff) => {
-    let count = 0;
-    let l = 0;
-    let r = 0;
-    while (l < n) {
-      if (asc[r] - asc[l] < diff) {
-        r++;
-      } else {
+    let end = asc[0];
+    let count = 1;
+
+    for (let i = 0; i < asc.length; i++) {
+      if (asc[i] - end >= diff) {
         count++;
-        l = r;
+        end = asc[i];
       }
     }
+
     return count;
   };
 
-  let s = 1;
+  let s = 0;
   let e = asc[n - 1];
-  while (s < e) {
+  while (s <= e) {
     const m = Math.floor((s + e) / 2);
-    const k = calc(m);
+    const k = calc(m); //  m간격으로 정렬된 집 배열을 선형탐색 했을 때 공유기 설치 개수
     if (k < c) {
-      e = m;
+      e = m - 1;
     } else {
       answer = m;
       s = m + 1;

@@ -2,7 +2,7 @@ const { solution } = require('./index');
 
 const parser = (rawInputs) => rawInputs.toString().trim().split('\n');
 
-describe('2110-g5 tester', () => {
+describe('2110-g4 tester', () => {
   it('1', () => {
     const ex1 = parser('5 3\n1\n2\n8\n4\n9');
     expect(solution(ex1)).toBe(3);
