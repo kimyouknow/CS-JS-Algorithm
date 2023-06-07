@@ -77,6 +77,7 @@
 
 ## DB
 
+- [데이버베이스개념](db/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%EA%B0%9C%EB%85%90/)
 - [mongodb란?](db/mongodb/mongodb%EB%9E%80%3F.md)
 
 ## 회고
