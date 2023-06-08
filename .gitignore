@@ -25,3 +25,5 @@ public
 
 # Mac files
 .DS_Store
+node_modules
+
